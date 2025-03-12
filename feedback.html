@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - Fresh & Fast Canteen</title>
+  <meta name="description" content="Share your experience with us">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+  <div class="page-container">
+      <header class="header">
+          <div class="container header-container">
+              <div class="logo">
+                  <a href="index.html" class="logo-link">
+                      <span class="logo-icon">🍽️</span>
+                      <span class="logo-text">Fresh & Fast</span>
+                  </a>
+              </div>
+
+              <nav class="desktop-nav">
+                  <ul class="nav-list">
+                      <li><a href="index.html" class="nav-link">Home</a></li>
+                      <li><a href="menu.html" class="nav-link">Menu</a></li>
+                      <li><a href="order.html" class="nav-link">Order</a></li>
+                      <li><a href="feedback.html" class="nav-link active">Feedback</a></li>
+                      <li><a href="contact.html" class="nav-link">Contact</a></li>
+                  </ul>
+              </nav>
+
+              <div class="header-actions">
+                  <button id="theme-toggle" class="icon-button" aria-label="Toggle theme">
+                      <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+                      <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+                  </button>
+                  <button class="icon-button cart-button" aria-label="Shopping cart">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                      <span class="cart-badge">0</span>
+                  </button>
+                  <button id="mobile-menu-toggle" class="icon-button mobile-menu-button" aria-label="Toggle menu">
+                      <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+                      <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                  </button>
+              </div>
+          </div>
+
+          <nav id="mobile-nav" class="mobile-nav">
+              <ul class="mobile-nav-list">
+                  <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                  <li><a href="menu.html" class="mobile-nav-link">Menu</a></li>
+                  <li><a href="order.html" class="mobile-nav-link">Order</a></li>
+                  <li><a href="feedback.html" class="mobile-nav-link active">Feedback</a></li>
+                  <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+              </ul>
+          </nav>
+      </header>
+
+      <main>
+          <div class="container page-content">
+              <h1 class="page-title animate-fade-in">Share Your Experience</h1>
+              <p class="section-subtitle animate-fade-in">Your feedback helps us improve our service and food quality</p>
+
+              <div class="card animate-slide-up">
+                  <div class="card-header">
+                      <h2 class="card-title">Feedback Form</h2>
+                      <p class="card-description">Please take a moment to rate your experience and provide comments</p>
+                  </div>
+                  <div class="card-content">
+                      <form id="feedback-form" class="form">
+                          <div class="form-group">
+                              <label for="name" class="form-label">Your Name</label>
+                              <input type="text" id="name" class="form-input" placeholder="Enter your name" required>
+                          </div>
+
+                          <div class="form-group">
+                              <label for="email" class="form-label">Email Address</label>
+                              <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
+                          </div>
+
+                          <div class="form-group">
+                              <label for="order-id" class="form-label">Order ID (Optional)</label>
+                              <input type="text" id="order-id" class="form-input" placeholder="Enter your order ID if applicable">
+                          </div>
+
+                          <div class="form-group">
+                              <label class="form-label">How would you rate your overall experience?</label>
+                              <div class="rating-container">
+                                  <div class="star-rating">
+                                      <input type="radio" id="star5" name="rating" value="5">
+                                      <label for="star5" title="5 stars">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                      </label>
+                                      <input type="radio" id="star4" name="rating" value="4">
+                                      <label for="star4" title="4 stars">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                      </label>
+                                      <input type="radio" id="star3" name="rating" value="3">
+                                      <label for="star3" title="3 stars">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                      </label>
+                                      <input type="radio" id="star2" name="rating" value="2">
+                                      <label for="star2" title="2 stars">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                      </label>
+                                      <input type="radio" id="star1" name="rating" value="1">
+                                      <label for="star1" title="1 star">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                      </label>
+                                  </div>
+                                  <span id="rating-text">Select a rating</span>
+                              </div>
+                          </div>
+
+                          <div class="form-group">
+                              <label class="form-label">What aspects would you like to rate?</label>
+                              <div class="checkbox-group">
+                                  <div class="checkbox-option">
+                                      <input type="checkbox" id="food-quality" name="aspects" value="food-quality">
+                                      <label for="food-quality">Food Quality</label>
+                                  </div>
+                                  <div class="checkbox-option">
+                                      <input type="checkbox" id="service" name="aspects" value="service">
+                                      <label for="service">Service</label>
+                                  </div>
+                                  <div class="checkbox-option">
+                                      <input type="checkbox" id="cleanliness" name="aspects" value="cleanliness">
+                                      <label for="cleanliness">Cleanliness</label>
+                                  </div>
+                                  <div class="checkbox-option">
+                                      <input type="checkbox" id="value" name="aspects" value="value">
+                                      <label for="value">Value for Money</label>
+                                  </div>
+                                  <div class="checkbox-option">
+                                      <input type="checkbox" id="app-experience" name="aspects" value="app-experience">
+                                      <label for="app-experience">App/Website Experience</label>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="form-group">
+                              <label for="comments" class="form-label">Your Comments</label>
+                              <textarea id="comments" class="form-textarea" placeholder="Please share your thoughts, suggestions, or concerns..." required></textarea>
+                          </div>
+
+                          <div class="form-group">
+                              <label for="suggestions" class="form-label">Any suggestions for improvement?</label>
+                              <textarea id="suggestions" class="form-textarea" placeholder="How can we serve you better?"></textarea>
+                          </div>
+
+                          <div class="form-group">
+                              <div class="checkbox-option">
+                                  <input type="checkbox" id="contact-permission" name="contact-permission">
+                                  <label for="contact-permission">I agree to be contacted regarding my feedback if necessary</label>
+                              </div>
+                          </div>
+
+                          <button type="submit" class="button primary-button full-width animate-pulse-on-hover">Submit Feedback</button>
+                      </form>
+                  </div>
+              </div>
+
+              <div class="testimonials-section animate-fade-in">
+                  <h2 class="section-title">What Our Customers Say</h2>
+                  <div class="testimonials">
+                      <div class="testimonial-card animate-slide-up" style="animation-delay: 0.1s;">
+                          <div class="testimonial-rating">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                          </div>
+                          <p class="testimonial-text">"The food is always fresh and delicious. I love the online ordering system - it's so convenient and saves me time during my lunch break!"</p>
+                          <div class="testimonial-author">
+                              <span class="testimonial-name">Rahul Sharma</span>
+                              <span class="testimonial-date">2 weeks ago</span>
+                          </div>
+                      </div>
+
+                      <div class="testimonial-card animate-slide-up" style="animation-delay: 0.2s;">
+                          <div class="testimonial-rating">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                          </div>
+                          <p class="testimonial-text">"Great variety of options for vegetarians like me. The staff is always friendly and the food quality is consistently good. Highly recommend!"</p>
+                          <div class="testimonial-author">
+                              <span class="testimonial-name">Priya Patel</span>
+                              <span class="testimonial-date">1 month ago</span>
+                          </div>
+                      </div>
+
+                      <div class="testimonial-card animate-slide-up" style="animation-delay: 0.3s;">
+                          <div class="testimonial-rating">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                          </div>
+                          <p class="testimonial-text">"The online ordering system is very user-friendly. I appreciate the quick response time and accurate order fulfillment. The food is always hot and fresh!"</p>
+                          <div class="testimonial-author">
+                              <span class="testimonial-name">Amit Kumar</span>
+                              <span class="testimonial-date">2 months ago</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </main>
+
+      <footer class="footer">
+          <div class="container">
+              <div class="footer-content">
+                  <div class="footer-section">
+                      <h3 class="footer-title">Fresh & Fast</h3>
+                      <p class="footer-text">Delicious meals delivered fresh and fast to your location.</p>
+                  </div>
+
+                  <div class="footer-section">
+                      <h3 class="footer-title">Quick Links</h3>
+                      <ul class="footer-links">
+                          <li><a href="index.html" class="footer-link">Home</a></li>
+                          <li><a href="menu.html" class="footer-link">Menu</a></li>
+                          <li><a href="order.html" class="footer-link">Order</a></li>
+                          <li><a href="feedback.html" class="footer-link">Feedback</a></li>
+                          <li><a href="contact.html" class="footer-link">Contact</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="footer-section">
+                      <h3 class="footer-title">Opening Hours</h3>
+                      <ul class="footer-hours">
+                          <li>Monday - Friday: 8:00 AM - 8:00 PM</li>
+                          <li>Saturday: 9:00 AM - 7:00 PM</li>
+                          <li>Sunday: 10:00 AM - 6:00 PM</li>
+                      </ul>
+                  </div>
+
+                  <div class="footer-section">
+                      <h3 class="footer-title">Contact Us</h3>
+                      <ul class="footer-links">
+                          <li><a href="tel:7432840665" class="footer-link">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                              7432840665
+                          </a></li>
+                          <li><a href="tel:8910894306" class="footer-link">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                              8910894306
+                          </a></li>
+                          <li><a href="mailto:info@freshandfast.com" class="footer-link">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                              info@freshandfast.com
+                          </a></li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="footer-bottom">
+                  <p>&copy; <span id="current-year"></span> Fresh & Fast Canteen. All rights reserved.</p>
+              </div>
+          </div>
+      </footer>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/feedback.js"></script>
+</body>
+</html>
+
